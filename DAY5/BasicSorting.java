@@ -1,7 +1,5 @@
-package DAY5;
-
+// package DAY5;
 public class BasicSorting {
-
     public static void bubbleSort(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -13,7 +11,6 @@ public class BasicSorting {
             }
         }
     }
-
     public static void selectionSort(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {
             int minPos = i;
@@ -27,7 +24,6 @@ public class BasicSorting {
             arr[i] = temp;
         }
     }
-
     public static void insertionSort(int arr[]) {
         for (int i = 1; i < arr.length; i++) {
             int curr = arr[i];
