@@ -1,8 +1,4 @@
-// package DAY9;
-
 import java.util.*;
-
-// import javax.sql.rowset.spi.SyncResolver;
 
 public class String2 {
     public static String toUppercase(String str) {
