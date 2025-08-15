@@ -1,5 +1,3 @@
-package DAY13;
-
 public class OOPS2 {
     public static void main(String args[]) {
         // Fish shark = new Fish();
@@ -11,7 +9,6 @@ public class OOPS2 {
         dobby.breed = "desiii";
         dobby.legs = 4;
         System.out.println(dobby.legs);
-
     }
 }
 

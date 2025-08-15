@@ -1,7 +1,3 @@
-import java.util.*;
-
-// package DAY13;
-
 public class OOPS3 {
     public static void main(String[] args) {
         // Calculator c1 = new Calculator();
