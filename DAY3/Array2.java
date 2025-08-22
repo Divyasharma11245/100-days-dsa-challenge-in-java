@@ -14,7 +14,7 @@ public class Array2 {
                 for (int k = start; k <= end; k++) {
                     currSum += arr[k];
                 }
-                System.out.println(currSum);
+                // System.out.println(currSum);
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
@@ -66,8 +66,8 @@ public class Array2 {
     }
 
     public static void main(String args[]) {
-        int numbers[] = { -2, -3, 4, -1, -2 ,1 ,5, -3  } ;
-        kadanes(numbers);
+        int numbers[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        maxSubarraySumBF(numbers);
 
     }
 }
