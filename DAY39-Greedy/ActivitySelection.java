@@ -6,7 +6,6 @@ public class ActivitySelection {
     public static void main(String[] args) {
         int start[] = { 1, 3, 0, 5, 8, 5 };
         int end[] = { 2, 4, 6, 7, 9, 9 };
-
         // agar sortingg nhi dii hotii
         // Sorting
         int activities[][] = new int[end.length][3];
@@ -16,16 +15,13 @@ public class ActivitySelection {
             activities[i][1] = start[i];
             activities[i][2] = end[i];
         }
-
         // sorting comaparator function for sorting of 2d array
         // labmda function
         Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
 
         // end time basis sort already
         int maxAct = 0;
-
         ArrayList<Integer> ans = new ArrayList<>();
-
         // 1st activity ko to choose krrna hi hai
         maxAct = 1;
         ans.add(activities[0][0]);
