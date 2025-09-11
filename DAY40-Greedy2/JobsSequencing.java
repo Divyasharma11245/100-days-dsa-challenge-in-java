@@ -1,7 +1,4 @@
-// package DAY40-Greedy2;
-
 import java.util.*;
-
 public class JobsSequencing {
 
     static class Job {
@@ -15,9 +12,7 @@ public class JobsSequencing {
             id = i;
         }
     }
-
     public static void main(String[] args) {
-
         int jobInfo[][] = {
                 { 4, 20 },
                 { 1, 10 },
@@ -45,7 +40,6 @@ public class JobsSequencing {
         }
 
         System.out.println("max jobe can be done : " + seq.size());
-
         for (int i = 0; i < seq.size(); i++) {
             System.out.println(seq.get(i));
         }
