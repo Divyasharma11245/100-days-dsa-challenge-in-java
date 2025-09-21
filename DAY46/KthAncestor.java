@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class LCA {
+public class KthAncestor {
 
     static class Node {
         int data;
@@ -12,24 +10,27 @@ public class LCA {
             this.left = null;
             this.right = null;
         }
-
     }
 
-    public static Node lca(Node root, int n1, int n2) {
-        ArrayList path1 = new ArrayList<>();
-        ArrayList path2 = new ArrayList<>();
-
-        getpath(root, n1, path1);
-        getpath(root, n2, path2);
-
-        int i = 0;
-        for (; i < path1.size() && path2.size(); i++) {
-            if (path1.get(i) != path2.get(i)) {
-                break;
-            }
+    public static int kAncestor(Node root, int n, int k) {
+        if (root == null) {
+            return -1;
         }
-        // last node equals i-1
-        Node lca = path1.get(i - 1);
+        if (root.data == n) {
+            return 0;
+        }
+
+        int leftDist = kAncestor(root.left, n, k);
+        int rightDist = kAncestor(root.right, n, k);
+
+        if (leftDist == -1 && rightDist == -1) {
+            return -1;
+        }
+        int max = Math.max(leftDist, rightDist);
+        if (max + 1 == k) {
+            System.out.println(root.data);
+        }
+        return max + 1;
     }
 
     public static void main(String[] args) {
@@ -47,5 +48,8 @@ public class LCA {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
+        int n1 = 4;
+        int n2 = 5;
+        kAncestor(root, 4, 1);
     }
 }
