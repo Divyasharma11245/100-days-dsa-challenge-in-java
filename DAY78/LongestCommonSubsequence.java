@@ -1,5 +1,5 @@
 
-public class LCS {
+public class LongestCommonSubsequence {
 
     // -----------------RECURSION CODE---------------
 
