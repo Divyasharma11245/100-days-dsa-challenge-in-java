@@ -35,7 +35,6 @@ public class StringConversion {
 
         int ans = (n - lcs) + (m - lcs);
         return ans;
-
     }
 
     public static void main(String[] args) {
